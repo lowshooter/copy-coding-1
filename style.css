@@ -1,0 +1,140 @@
+html {
+    font-size: 100%;
+}
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+a {
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 960px;
+    padding: 0 4%;
+    margin: 0 auto 100px;
+    text-align: center;
+}
+
+.site-title {
+    width: 120px;
+    line-height: 1px;
+    padding: 10px 0;
+}
+
+.site-title a {
+    display: block;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 60px;
+    border-bottom: 1px solid #383e45;
+    display: inline-block;
+}
+
+.content-title {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+/*-------------------ヘッダー------------------*/
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+#header ul {
+    display: flex;
+    padding: 10px 0;
+}
+
+#header li {
+    margin-left: 30px;
+}
+
+#header li a { 
+    color: #24292e;
+}
+
+#header li a:hover {
+    opacity: 0.7;
+}
+
+/*-------------------メイン-----------------*/
+#main-wrapper {
+    margin-bottom: 80px;
+}
+
+#main-wrapper img {
+    width: 100%;
+    max-width: 1920px;
+    height: 600px;
+    object-fit: cover;
+}
+
+#about .content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about img {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 30px;
+}
+
+#about .text {
+    text-align: left;
+}
+
+#bicycles ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+#bicycles li {
+    width: 32%;
+}
+
+/*-------------------フッター------------------*/
+footer {
+    font-size: 0.5rem;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+/*-------------------SP------------------*/
+@media screen and (max-width: 600px) {
+    #main-wrapper img {
+        height: calc(100vh - 60px);
+    }
+
+    #about .content {
+        flex-direction: column;
+    }
+
+    #about img {
+        margin-right: 0;
+    }
+
+    #bicycles ul {
+        flex-direction: column;
+    }
+
+    #bicycles li {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
